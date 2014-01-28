@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+    	$( document ).ready(function() {
+    		// just replace href
+			$( "a" ).attr( "href", "allMyHrefsAreTheSameNow.html" );
+			
+			// replace everything
+			$( "a" ).attr({
+    			title: "all titles are the same too!",
+    			href: "somethingNew.html"
+			});
+			
+			// returns the href for the first a element in the document
+			var attrGet = $( "a" ).attr( "href" );
+			console.log(attrGet); 
+		});
+		
+		//  $(document).ready(function() {
+		//	  $('#div-main').fadetoggle();	
+		//  });
+</script>
+</head>
+<body>
+    <div class="cool-div">
+    	<a href="allMyHrefsAreTheSameNow.html">original link 1</a>
+    	<br><a href="different.html">original link 2</a>
+    </div>
+</body>
+</html>
+

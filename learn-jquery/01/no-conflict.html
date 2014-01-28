@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+		var $j = jQuery.noConflict();
+		// $j is now an alias to the jQuery function; creating the new alias is optional.
+ 
+		$j(document).ready(function() {
+    		$j( ".cool-div" ).hide();
+		});
+</script>
+</head>
+<body>
+    <div class="cool-div">testing hide</div>
+</body>
+</html>
+
